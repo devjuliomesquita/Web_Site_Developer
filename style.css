@@ -201,6 +201,28 @@ body{
     font-size: 1.7rem;
     padding: 1rem 0;
 }
+.sobre::before, .sobre::after{
+    content: '';
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+    border-radius: 50%;
+}
+.sobre::before{
+    height: 50rem;
+    width: 50rem;
+    background: #ccc;
+    bottom: -10rem;
+    left: -10rem;
+}
+.sobre::after{
+    height: 60rem;
+    width: 60rem;
+    background: var(--color);
+    top: -10rem;
+    right: -10rem;
+}
+
 .btn{
     background: var(--color);
     color: #fff;
