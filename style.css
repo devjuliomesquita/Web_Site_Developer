@@ -13,7 +13,7 @@
     border: none;
     text-transform: capitalize;
     text-decoration: none;
-    transition: all .5s linear;
+    transition: all .2s linear;
 }
 html{
     font-size: 62.5%;
@@ -96,9 +96,14 @@ body{
     font-size: 2rem;
     font-weight: 400;
     box-shadow: 0 .3 .5 regba(0,0,0,.3);
+    
 }
 .home button:hover{
     letter-spacing: .1rem;
+}
+.home button:active{
+    transform: scale(.9);
+    box-shadow: none;
 }
 .home .wave{
     position: absolute;
@@ -403,7 +408,7 @@ body{
     height: 100%;
     text-align: center;
     padding: 0 2rem;
-    transition: .1s linear;
+    
 }
 .faq .row{
     display: flex;
@@ -418,6 +423,7 @@ body{
 .faq .row .accordion-conteiner{
     width: 50%;
     text-align: left;
+    transition: .5s linear;
 }
 .faq .row .accordion-conteiner .accordion .accordion-header{
     background: var(--color);
@@ -463,13 +469,11 @@ body{
     padding: 1rem 2rem;
     margin-top: 1rem;
 }
-.footer .row{
-    align-self: flex-end;
-}
 .footer h1{
     color: #fff;
     letter-spacing: .1rem;
     font-weight: 400;
+    text-align: left;
 }
 .footer .icons a{
     color: #fff;
@@ -477,66 +481,10 @@ body{
     padding: 0 1rem;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer .icons a:hover{
+    color: #333;
+    
+}
 /*RESPONSIVIDADE - - - INICIO*/
 @media(max-width:550px){
     .footer{
