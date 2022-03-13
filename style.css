@@ -342,12 +342,62 @@ body{
     bottom: -3rem;
     left: -4rem;
 }
-
-
-
-
-
-
+.contato{
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+}
+.contato .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato .row .image img{
+    width: 50vw;
+    height: 70vh;
+}
+.contato .row .form-conteiner{
+    width: 50%;
+    text-align: left;
+    padding: 0 5rem;
+}
+.contato .row .form-conteiner input, textarea{
+    height: 4rem;
+    background: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.2);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+.contato .row .form-conteiner .inputbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contato .row .form-conteiner .inputbox input[type="text"]{
+    width: 49%;
+}
+.contato .row .form-conteiner input[type="email"]{
+    width: 100%;
+}
+.contato .row .form-conteiner textarea{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+.contato .row .form-conteiner input[type="submit"]{
+    background: var(--color);
+    color: #fff;
+    height: 4rem;
+    width: 10rem;
+    cursor: pointer;
+}
+.contato .row .form-conteiner input[type="submit"]:hover{
+    opacity: .9;
+    letter-spacing: .1rem;
+}
 
 
 
@@ -471,5 +521,15 @@ body{
     }
     .servico .row .content{
         padding: 0;
+    }
+    .contato .row{
+        flex-flow: column;
+    }
+    .contato .row .image img{
+        width: 100vw;
+    }
+    .contato .row .form-conteiner{
+        width: 100%;
+        padding: 0 1.5rem;
     }
 }
